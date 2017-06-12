@@ -15,6 +15,8 @@
 		ABBFB7F71EEE6A3A00FBF703 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABBFB7F51EEE6A3A00FBF703 /* LaunchScreen.storyboard */; };
 		ABBFB8021EEE6A3B00FBF703 /* SAButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBFB8011EEE6A3B00FBF703 /* SAButtonTests.m */; };
 		ABBFB80D1EEE6A3B00FBF703 /* SAButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBFB80C1EEE6A3B00FBF703 /* SAButtonUITests.m */; };
+		ABBFB81D1EEE6AB800FBF703 /* SAButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBFB81C1EEE6AB800FBF703 /* SAButton.m */; };
+		ABBFB8211EEE6B6000FBF703 /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBFB8201EEE6B6000FBF703 /* 111.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		ABBFB8081EEE6A3B00FBF703 /* SAButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABBFB80C1EEE6A3B00FBF703 /* SAButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAButtonUITests.m; sourceTree = "<group>"; };
 		ABBFB80E1EEE6A3B00FBF703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABBFB81B1EEE6AB800FBF703 /* SAButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAButton.h; sourceTree = "<group>"; };
+		ABBFB81C1EEE6AB800FBF703 /* SAButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAButton.m; sourceTree = "<group>"; };
+		ABBFB8201EEE6B6000FBF703 /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +106,12 @@
 		ABBFB7E61EEE6A3A00FBF703 /* SAButton */ = {
 			isa = PBXGroup;
 			children = (
+				ABBFB81A1EEE6A7600FBF703 /* Button */,
 				ABBFB7EA1EEE6A3A00FBF703 /* AppDelegate.h */,
 				ABBFB7EB1EEE6A3A00FBF703 /* AppDelegate.m */,
 				ABBFB7ED1EEE6A3A00FBF703 /* ViewController.h */,
 				ABBFB7EE1EEE6A3A00FBF703 /* ViewController.m */,
+				ABBFB8201EEE6B6000FBF703 /* 111.png */,
 				ABBFB7F01EEE6A3A00FBF703 /* Main.storyboard */,
 				ABBFB7F31EEE6A3A00FBF703 /* Assets.xcassets */,
 				ABBFB7F51EEE6A3A00FBF703 /* LaunchScreen.storyboard */,
@@ -138,6 +145,15 @@
 				ABBFB80E1EEE6A3B00FBF703 /* Info.plist */,
 			);
 			path = SAButtonUITests;
+			sourceTree = "<group>";
+		};
+		ABBFB81A1EEE6A7600FBF703 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				ABBFB81B1EEE6AB800FBF703 /* SAButton.h */,
+				ABBFB81C1EEE6AB800FBF703 /* SAButton.m */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +223,8 @@
 				TargetAttributes = {
 					ABBFB7E31EEE6A3A00FBF703 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = XDK267KQ83;
+						ProvisioningStyle = Manual;
 					};
 					ABBFB7FC1EEE6A3B00FBF703 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -247,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABBFB7F71EEE6A3A00FBF703 /* LaunchScreen.storyboard in Resources */,
+				ABBFB8211EEE6B6000FBF703 /* 111.png in Resources */,
 				ABBFB7F41EEE6A3A00FBF703 /* Assets.xcassets in Resources */,
 				ABBFB7F21EEE6A3A00FBF703 /* Main.storyboard in Resources */,
 			);
@@ -274,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABBFB7EF1EEE6A3A00FBF703 /* ViewController.m in Sources */,
+				ABBFB81D1EEE6AB800FBF703 /* SAButton.m in Sources */,
 				ABBFB7EC1EEE6A3A00FBF703 /* AppDelegate.m in Sources */,
 				ABBFB7E91EEE6A3A00FBF703 /* main.m in Sources */,
 			);
@@ -424,10 +443,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XDK267KQ83;
 				INFOPLIST_FILE = SAButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.developermichael.SAButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "77f0e1f5-41af-44ef-975e-38903d34a039";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development *";
 			};
 			name = Debug;
 		};
@@ -435,10 +457,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XDK267KQ83;
 				INFOPLIST_FILE = SAButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.developermichael.SAButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "77f0e1f5-41af-44ef-975e-38903d34a039";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development *";
 			};
 			name = Release;
 		};
