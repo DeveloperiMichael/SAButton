@@ -22,7 +22,7 @@
     
     SAButton *button = [SAButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width-240)*0.5, 100, 240, 240);
-    [button setTitle:@"DeveloperMichael" forState:UIControlStateNormal];
+    [button setTitle:@"DeveloperiMichael" forState:UIControlStateNormal];
     [button setImage:[UIImage imageNamed:@"111"] forState:UIControlStateNormal];
     button.margin = 10;
     button.locationType = 0;
